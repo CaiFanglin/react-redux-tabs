@@ -13,7 +13,7 @@ render () {
 
 #### 2.文字截断
     >多行截断
-    `
+    <code>
     width: 100%;
     text-overflow: ellipsis;
     white-space: normal;
@@ -23,15 +23,13 @@ render () {
     /* autoprefixer: off */     // 需要加这2行，-webkit-box-orient才生效
     -webkit-box-orient: vertical;
     /* autoprefixer: on */
-
     /* Firefox */
     display:-moz-box;
     -moz-box-orient: vertical;
-
     /* W3C */
     display:box;
     box-orient: vertical;
-   `
+    </code>
 
    >单行截断
    <code>
