@@ -1,5 +1,6 @@
 # 问题汇总
 - 1.render中使用js外层需加标签
+```
 render () {
     <p>      // 需要外层标签，否则报语法错误
         {list.map((item, index) => {
@@ -7,6 +8,7 @@ render () {
         })}
     </p>
 }
+```
 
 - 2.多行截断
     ```
@@ -37,9 +39,9 @@ render () {
    ```
 
 - 3.在开发者工具中观察redux的状态变化
-```const store = applyMiddleware(thunkMiddleware)(createStore)(Reducer));```
+  `const store = applyMiddleware(thunkMiddleware)(createStore)(Reducer));`
 改成：
-```const store = applyMiddleware(thunkMiddleware)(createStore)(Reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());```
+  `const store = applyMiddleware(thunkMiddleware)(createStore)(Reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());`
 
 - 4.本地静态资源的fetch路径
 本code是以create-react-app构建的，其静态资源位于public中，其默认的__dirname是public的路径
