@@ -13,7 +13,8 @@ render () {
 
 - 2.文字截断
 ------------------------------
-    多行截断
+
+    >多行截断
     <code>
     width: 100%;
     text-overflow: ellipsis;
