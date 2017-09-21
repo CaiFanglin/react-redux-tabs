@@ -12,8 +12,7 @@ render () {
 ```
 
 #### 2.文字截断
-    >多行截断
-    <code>
+    多行截断
     width: 100%;
     text-overflow: ellipsis;
     white-space: normal;
@@ -29,7 +28,6 @@ render () {
     /* W3C */
     display:box;
     box-orient: vertical;
-    </code>
 
    >单行截断
    <code>
