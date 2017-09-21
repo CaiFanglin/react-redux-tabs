@@ -13,8 +13,8 @@ render () {
 
 - 2.文字截断
 ------------------------------
-    >多行截断
-    ```
+    多行截断
+    <code>
     width: 100%;
     text-overflow: ellipsis;
     white-space: normal;
@@ -32,14 +32,14 @@ render () {
     /* W3C */
     display:box;
     box-orient: vertical;
-    ```
+    </code>
 
    >单行截断
-   ```
-   overflow:hidden;  /*超过部分不显示*/
-   text-overflow:ellipsis;  /*超过部分用点点表示*/
-   white-space:nowrap;/*不换行*/
-   ```
+   <code>
+    overflow:hidden;  /*超过部分不显示*/
+    text-overflow:ellipsis;  /*超过部分用点点表示*/
+    white-space:nowrap;/*不换行*/
+   </code>
 
 - 3.在开发者工具中观察redux的状态变化
 ------------------------------
