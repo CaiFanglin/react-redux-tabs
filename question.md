@@ -14,7 +14,8 @@ render () {
 #### 2.文字截断
 
     >多行截断
-    <code>
+
+    ```
     width: 100%;
     text-overflow: ellipsis;
     white-space: normal;
@@ -32,7 +33,7 @@ render () {
     /* W3C */
     display:box;
     box-orient: vertical;
-    </code>
+   ```
 
    >单行截断
    <code>
@@ -47,7 +48,7 @@ render () {
 改成：
   `const store = applyMiddleware(thunkMiddleware)(createStore)(Reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());`
 
-####4.本地静态资源的fetch路径
+#### 4.本地静态资源的fetch路径
 
     本code是以create-react-app构建的，其静态资源位于public中，其默认的__dirname是public的路径
 
