@@ -1,5 +1,6 @@
 # 问题汇总
 - 1.render中使用js外层需加标签
+------------------------------
 ```
 render () {
     <p>      // 需要外层标签，否则报语法错误
@@ -11,6 +12,7 @@ render () {
 ```
 
 - 2.文字截断
+------------------------------
     >多行截断
     ```
     width: 100%;
@@ -33,18 +35,20 @@ render () {
     ```
 
    >单行截断
-   `
+   ```
    overflow:hidden;  /*超过部分不显示*/
    text-overflow:ellipsis;  /*超过部分用点点表示*/
    white-space:nowrap;/*不换行*/
-   `
+   ```
 
 - 3.在开发者工具中观察redux的状态变化
-  >`const store = applyMiddleware(thunkMiddleware)(createStore)(Reducer));`
+------------------------------
+  `const store = applyMiddleware(thunkMiddleware)(createStore)(Reducer));`
 改成：
-  >`const store = applyMiddleware(thunkMiddleware)(createStore)(Reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());`
+  `const store = applyMiddleware(thunkMiddleware)(createStore)(Reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());`
 
 - 4.本地静态资源的fetch路径
->本code是以create-react-app构建的，其静态资源位于public中，其默认的__dirname是public的路径
+------------------------------
+    本code是以create-react-app构建的，其静态资源位于public中，其默认的__dirname是public的路径
 
 
