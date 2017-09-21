@@ -1,0 +1,7 @@
+.ul{list-style:none;height: 30px;}
+.ul .li{float:left;width:100px;background:#CCC;margin-left:3px;line-height:30px;}
+.ul a{display:block;text-align:center;height:30px;}
+.ul a:link{color:#666;text-decoration:none;}
+.ul a:visited{color:#666;text-decoration:underline;}
+.ul a:hover{color:#FFF; font-weight:bold;text-decoration:none;}
+.ul li.active{background-color:#3a4;}

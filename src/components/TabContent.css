@@ -1,0 +1,37 @@
+.tabContent {
+    border: 1px solid #000;
+    height: 200px;
+    overflow: hidden;
+    padding: 10px 10px;
+    margin: 20px 40px;
+    width: 300px;
+}
+.noRender {
+    display: none;
+}
+.c-blocka p{
+    margin: 5px 0;
+    border-bottom: 1px dotted gray;
+}
+.c-blocka{
+    display: block;
+}
+.c-line-clamp2 {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-orient: vertical;
+
+    /* W3C */
+    display:box;
+    box-orient: vertical;
+}
